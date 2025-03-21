@@ -1,0 +1,14 @@
+### Generate image from text
+POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp-image-generation:generateContent?key=AIzaSyDRjqYEvvz5RNvFJgVcnZ1POSLhuNsdWPM
+Content-Type: application/json
+
+{
+  "contents": [{
+    "parts": [{
+      "text": "Hi, can you create a 3d rendered image of an interior design home?"
+    }]
+  }],
+  "generationConfig": {
+    "responseModalities": ["Text", "Image"]
+  }
+}
