@@ -48,7 +48,7 @@ export default function ShareButtons({ imageUrl }: ShareButtonsProps) {
             });
           } catch (err) {
             // Fallback to copying the URL if sharing fails
-            navigator.clipboard.writeText(publicUrl);
+            // navigator.clipboard.writeText(publicUrl);
             alert('Link copied! You can now share it on TikTok');
           }
           break;
